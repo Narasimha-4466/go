@@ -1,0 +1,118 @@
+# ~ sharp
+! ~ Bang
+#! ~ Shebang
+
+
+
+#!/bin/bash
+NAME=Sai
+ehco "hi $NAME"
+echo "hello $NAME"
+echo "welcome $NAME"
+
+narasimha.jn05@gmail.com
+psswd:Arya@4466
+
+
+
+#!/bin/bash 
+date=$(date) 
+echo "today is date $date"
+
+
+#!/bin/bash 
+date=$(ls -lrt )
+echo "$date"
+
+
+#!/bin/bash 
+date=$(ls -lrt > log.out)
+echo "my sample"
+echo "$date"
+
+#!/bin/bash 
+echo "installing kernal soure"
+cd /home/narasimha/linux-kernal
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.2.tar.xz 
+echo "untar the file"
+tar -xvzf linux-5.11.2.tar.xz
+
+
+
+#!/bin/bash 
+ehco "hi shenkar"
+cd folder1
+ls
+touch util
+
+
+
+
+#!/bin/sh 
+
+#!/bin/bash
+LINUX_KERNEL_COMPILATION=/home/narasimha/linux-kernal_compilaion
+KERNEL_SOURCE=$LINUX_KERNEL_COMPILATION/linux-5.11.2
+KERNEL_BUILD=$LINUX_KERNEL_COMPILATION/kernel_build
+INSTALL_MOD_PATH=$LINUX_KERNEL_COMPILATION/kernel_install
+echo "Downloading kernal soure"
+#cd $LINUX_KERNEL_COMPILATION
+#wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.2.tar.xz 
+ls -lrt
+echo "untar the file"
+#tar -xvzf linux-5.11.2.tar.xz
+ls -lrt
+echo "configuring  kernel build"
+cd $KERNEL_SOURCE
+#make ARCH=arm64 O=$KERNEL_BUILD defconfig
+cd $KERNEL_BUILD
+ls -lrt
+#make -j8 ARCH=arm64 $INSTALL_MOD_PATH  modules_install
+ls -lrt $INSTALL_MOD_PATH
+echo "successfully build"
+
+
+==============================================================
+#!/bin/bash 
+LINUX_KERNEL_COMPILATION=/home/narasimha/linux-kernal_compilaion
+KERNEL_SOURCE=$LINUX_KERNEL_COMPILATION/linux-5.11.2
+KERNEL_BUILD=$LINUX_KERNEL_COMPILATION/kernel_build
+INSTALL_MOD_PATH=$LINUX_KERNEL_COMPILATION/kernel_install
+
+echo "Downloading kernal soure"
+#cd $LINUX_KERNEL_COMPILATION
+#wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.2.tar.xz 
+ls -lrt
+
+echo "untar the file"
+#tar -xvzf linux-5.11.2.tar.xz
+ls -lrt
+
+echo "configuring  kernel build"
+cd $KERNEL_SOURCE
+#make ARCH=arm64 O=$KERNEL_BUILD defconfig
+
+
+echo "KERNEL_BUILD=$KERNEL_BUILD"
+cd $KERNEL_BUILD
+ls -lrt
+#make -j8 ARCH=arm64 $INSTALL_MOD_PATH  modules_install
+
+echo "FIND VMLINUX"
+echo "INSTALL_MOD_PATH=$INSTALL_MOD_PATH"
+echo "$INSTALL_MOD_PATH | grep vmlinux"
+cd $INSTALL_MOD_PATH && la -l vmlinux
+
+echo "successfully build"
+
+
+if [ ... ]
+then
+  # if-code
+else
+  # else-code
+fi
+
+
+
+
